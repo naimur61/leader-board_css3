@@ -1,13 +1,154 @@
+/* font  */
+@import url("https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans&family=Patua+One&family=Poppins:wght@500&display=swap");
+/* common style / utilities */
+body {
+	background-color: #e5e5e5;
+	font-family: "Poppins", sans-serif;
+}
+main {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.container {
+	margin-top: 25px;
+	width: 870px;
+	padding: 30px;
+	background-color: white;
+	border-radius: 7px;
+}
+.section-title {
+	color: #562eff;
+	margin-top: 3px;
+}
 /* .top-player sytle  */
-.top-player {
+.players {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-row-gap: 30px;
 }
 .player {
 	display: flex;
 	align-items: center;
 }
 .player img {
-	width: 60px;
-	height: 60px;
+	width: 56px;
+	height: 56px;
+}
+.player-name {
+	margin-left: 15px;
+	font-size: 18px;
+}
+hr {
+	border: 1px solid #d1d1d1;
+	margin: 30px 0;
+}
+/* --------------------
+     Top Blog Style
+ ---------------------- */
+.blogs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 26px 46px;
+}
+.thambnail img {
+	width: 177px;
+	height: 117px;
+}
+.blog {
+	display: flex;
+}
+.blog-info {
+	margin-left: 16px;
+}
+.blog-title {
+	font-size: 20px;
+}
+.blog-author a {
+	text-decoration: none;
+	font-size: 16px;
+}
+.blog-author span {
+	color: #9f9f9f;
+}
+/*----------------
+    courses styles  
+   -----------------*/
+.course-banner {
+	width: 224px;
+	height: 104px;
+}
+.course-details h3 {
+	margin: 15px 0;
+	color: #1e1e1e;
+	font-family: "Roboto";
+}
+.course-details a {
+	text-decoration: none;
+	color: maroon;
+}
+.course-info .filled {
+	color: #ffc014;
+}
+.course-info .empty {
+	color: #aeaeae;
+}
+.course-info span {
+	color: #a2a2a2;
+}
+.course-info .clock {
+	color: whitesmoke;
+	background-color: #ff4a60;
+	border: 1px solid #4da59b;
+	border-radius: 50px;
+	padding: 5px;
+}
+.course-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.courses {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+}
+/*--------------
+ Media quari
+-------------- */
+/*--------------
+ Mobail Devices
+-------------- */
+
+@media screen and (max-width: 688px) {
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+	.players,
+	.blogs,
+	.courses {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.player,
+	.blog,
+	.course {
+		flex-direction: column;
+	}
+}
+/*--------------
+ Tablet Devices
+-------------- */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+	.container {
+		width: 100%;
+		margin: auto;
+	}
+	.players,
+	.courses {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
