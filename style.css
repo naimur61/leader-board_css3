@@ -1,5 +1,34 @@
 /* font  */
 @import url("https://fonts.googleapis.com/css2?family=Arima&family=Josefin+Sans&family=Patua+One&family=Poppins:wght@500&display=swap");
+
+a {
+	text-decoration: none;
+}
+/*----------------
+ header style  
+----------------*/
+
+.head-nav {
+	margin: -10px;
+	background-color: #451bf6e8;
+	padding: 1% 19%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.head-nav span {
+	color: whitesmoke;
+	padding: 10px 5px;
+}
+.site-header span {
+	font-weight: 500;
+	font-size: 25px;
+}
+.site-details {
+	display: flex;
+	align-items: center;
+}
+
 /* common style / utilities */
 body {
 	background-color: #e5e5e5;
@@ -66,7 +95,6 @@ hr {
 	font-size: 20px;
 }
 .blog-author a {
-	text-decoration: none;
 	font-size: 16px;
 }
 .blog-author span {
@@ -85,7 +113,6 @@ hr {
 	font-family: "Roboto";
 }
 .course-details a {
-	text-decoration: none;
 	color: maroon;
 }
 .course-info .filled {
@@ -124,6 +151,10 @@ hr {
 -------------- */
 
 @media screen and (max-width: 688px) {
+	.head-nav {
+		padding: 2% 3%;
+		margin-bottom: 20px;
+	}
 	.container {
 		width: 100%;
 		margin: auto;
@@ -143,6 +174,10 @@ hr {
  Tablet Devices
 -------------- */
 @media screen and (min-width: 689px) and (max-width: 992px) {
+	.head-nav {
+		padding: 2% 1%;
+		margin-bottom: 20px;
+	}
 	.container {
 		width: 100%;
 		margin: auto;
